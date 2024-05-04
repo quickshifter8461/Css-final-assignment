@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #f2f9fe;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  margin: 8px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 2em;
+}
+
+.logo {
+  width: 200px;
+  height: 100%;
+  margin-left:50px;
+}
+
+.handBurger {
+  display: flex;
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+}
+
+.navBar {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 1em 0;
+  height: 100px;
+}
+
+.navLink {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.linksContainer {
+  display: none;
+  gap: 2em;
+}
+
+.links {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: 1s color ease-in-out;
+}
+
+.links:hover {
+  color: #909193;
+}
+
+.hero {
+  display: grid;
+  width: 100%;
+  text-align: center;
+  grid-template-columns: 1fr;
+}
+
+.heroImage img {
+  width: 100%;
+  display: block;
+}
+
+.heroText {
+  padding: 0 2rem;
+}
+
+.heroText h1 {
+  text-wrap: balance;
+  font-size: 4rem;
+  line-height: 1.35;
+  margin: 0 auto;
+  color: #111729;
+}
+
+.heroText h3 {
+  text-wrap: balance;
+  margin-bottom: 0;
+}
+
+.heroText p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 20px 0;
+  color: #223344;
+}
+
+.btn{
+    border: none;
+    background-color:#2a4dd0;
+    color: white;
+    font: inherit;
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    transition: 1s background-color ease-in-out;
+}
+
+.btn:hover{
+    background-color: #3c62ea;
+}
+
+.demo{
+    color: #2a4dd0;
+    text-decoration: none;
+    border-bottom:5px solid #2a4dd0 ;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+span{
+    color: #223344;
+    margin-left: 10px;
+    letter-spacing: 1px;
+}
+
+
+@media only screen and (min-width: 960px){
+    .handBurger{
+         display: none;
+    }
+
+    .linksContainer{
+        display: flex;
+        justify-content: end;
+        gap: 4em;
+    }
+
+    .logo{
+         margin-left: 0;
+    }
+
+    .hero{
+         grid-template-columns: 1fr 1fr;
+         margin-top:32px;
+    }
+
+    .heroText{
+        text-align: start;
+        padding: 0;
+    }
+
+    .features{
+        flex-direction: row;
+    }
+}
