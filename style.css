@@ -166,7 +166,15 @@ span{
 }
 
 @media only screen and (max-width: 800px){
+  .navLink{
+    display: none;
+  }
+  .logo{
+    margin: auto;
+    
+  }
   .hamBurger{
     display: none;
 }
+
 }
