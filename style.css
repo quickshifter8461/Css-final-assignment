@@ -174,5 +174,8 @@ span{
   .hamBurger{
     display: none;
 }
+.navBar{
+  justify-content: space-between;
+}
 
 }
